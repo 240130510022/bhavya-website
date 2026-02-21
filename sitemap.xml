@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://bhavyajoshi2320.github.io/bhavya-website/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://bhavyajoshi2320.github.io/bhavya-website/about.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Product Page -->
+  <url>
+    <loc>https://bhavyajoshi2320.github.io/bhavya-website/product.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Order Page -->
+  <url>
+    <loc>https://bhavyajoshi2320.github.io/bhavya-website/order.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://bhavyajoshi2320.github.io/bhavya-website/contact.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>
