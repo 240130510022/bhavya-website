@@ -185,34 +185,51 @@
     </header>
 
    <!-- Contact Form Section -->
+<!-- Contact Form Section -->
 <section class="contact-form">
     <div class="container">
         <h1>Contact Us</h1>
-        <form id="contactForm">
-            <label>Full name:</label>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <label>Email:</label>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <label>Message:</label>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div id="thankYouMessage" style="display:none; color: green; font-size: 1.5em; margin-top: 20px;">
-            Thank you! Your message has been sent. 🍰
-        </div>
+
+<form id="contactForm" action="https://script.google.com/macros/s/AKfycbyMXr_3zcp7cKHomeahXdza89gk8Uoedgw1xqWgRsv-wKTwlGHOV-OejfYdQGCfS0QI/exec" method="POST">
+
+<label>Full name:</label>
+<input type="text" name="name" placeholder="Your Name" required>
+
+<label>Email:</label>
+<input type="email" name="email" placeholder="Your Email" required>
+
+<label>Message:</label>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<div id="thankYouMessage" style="display:none; color: green; font-size: 1.5em; margin-top: 20px;">
+Thank you! Your message has been sent. 🍰
+</div>
+
     </div>
 </section>
 
-<!-- Script -->
-<script>
-    const form = document.getElementById('contactForm');
-    const thankYou = document.getElementById('thankYouMessage');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent actual form submission
-        thankYou.style.display = 'block'; // Show thank you message
-        form.reset(); // Optionally clear form fields
-    });
+<script>
+const form = document.getElementById("contactForm");
+const thankYou = document.getElementById("thankYouMessage");
+
+form.addEventListener("submit", function(e){
+e.preventDefault();
+
+fetch(form.action,{
+method:"POST",
+mode:"no-cors",
+body:new FormData(form)
+})
+.then(()=>{
+thankYou.style.display="block";
+form.reset();
+});
+});
 </script>
 
 
