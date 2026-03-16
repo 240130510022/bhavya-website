@@ -164,9 +164,48 @@ text-shadow: 1px 1px #fff;
 text-decoration: underline;
 }
 
+/* Floating Icons */
+
+.floating-contact{
+position:fixed;
+right:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
+z-index:999;
+}
+
+.floating-contact a{
+display:flex;
+align-items:center;
+justify-content:center;
+width:55px;
+height:55px;
+border-radius:50%;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:transform 0.3s;
+}
+
+.floating-contact a:hover{
+transform:scale(1.1);
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.email{
+background:#EA4335;
+}
+
+.floating-contact img{
+width:30px;
+height:30px;
+}
+
 </style>
 
-<!-- EmailJS Script -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
@@ -201,8 +240,6 @@ emailjs.init("HRkF28f2LD3A1lOE1");
 
 </div>
 </header>
-
-<!-- CONTACT FORM -->
 
 <section class="contact-form">
 
@@ -263,8 +300,6 @@ alert("Failed to send message");
 
 </script>
 
-<!-- CONTACT INFO -->
-
 <section class="contact-info">
 
 <div class="container">
@@ -287,9 +322,7 @@ alert("Failed to send message");
 
 <h3>Find Us</h3>
 
-<iframe
-src="https://www.google.com/maps?q=Ashram%20Road%20Ahmedabad&output=embed">
-</iframe>
+<iframe src="https://www.google.com/maps?q=Ashram%20Road%20Ahmedabad&output=embed"></iframe>
 
 </div>
 
@@ -306,6 +339,20 @@ src="https://www.google.com/maps?q=Ashram%20Road%20Ahmedabad&output=embed">
 </div>
 
 </footer>
+
+<!-- Floating WhatsApp and Email -->
+
+<div class="floating-contact">
+
+<a class="whatsapp" href="https://wa.me/919426574760" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+<a class="email" href="mailto:joshibhavya2024@gmail.com">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+</a>
+
+</div>
 
 </body>
 </html>
