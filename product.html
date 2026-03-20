@@ -1,161 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>Products</title></title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 
-    <!-- SEO Title -->
-    <title>Our Products | Sweet Indulgence Bakery Ahmedabad</title>
+<style>
+/* Products Section Styling */
+body{
+  background-image: url('3003.jpg');
+}
 
-    <!-- SEO Meta -->
-    <meta name="description" content="Explore our delicious bakery products including cakes, pastries, cookies, and breads in Ahmedabad. Freshly baked with love at Sweet Indulgence Bakery.">
-    <meta name="keywords" content="cakes Ahmedabad, pastries, bakery products, cookies, chocolate cake, birthday cake Ahmedabad">
-    <meta name="author" content="Sweet Indulgence Bakery">
-    <meta name="robots" content="index, follow">
+/* Replace with your image path */
+.products-section {
+  padding: 40px 20px;
+  background-color: rgba(255, 250, 240, 0.8);
+  text-align: center;
+}
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Sweet Indulgence Bakery Products">
-    <meta property="og:description" content="Delicious cakes, pastries, cookies and more in Ahmedabad.">
-    <meta property="og:image" content="cake1.jpg">
-    <meta property="og:type" content="website">
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://yourwebsite.com/products">
+.product-item {
+  background: rgba(255, 228, 225, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
 
-    <link rel="stylesheet" href="style.css">
+.product-item img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-    <style>
-        body{
-            background-image: url('3003.jpg');
-        }
+.product-item h3 {
+  color: #800000;
+  margin: 10px 0;
+}
 
-        .products-section {
-            padding: 40px 20px;
-            background-color: rgba(255, 250, 240, 0.8);
-            text-align: center;
-        }
+.product-item:hover {
+  transform: scale(1.05);
+}
 
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.welcome-banner {
+  background-color: rgba(255, 240, 245, 0.95);
+  padding: 20px 10px;
+  border-top: 2px dashed #f08080;
+  border-bottom: 2px dashed #f08080;
+}
 
-        .product-item {
-            background: rgba(255, 228, 225, 0.8);
-            padding: 15px;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
+.welcome-banner h1 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #b22222;
+  text-shadow: 1px 1px #fff;
+}
 
-        .product-item img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+.nav li a:hover {
+  text-decoration: underline;
+}
 
-        .product-item h3 {
-            color: #800000;
-        }
-
-        .product-item:hover {
-            transform: scale(1.05);
-        }
-
-        .welcome-banner {
-            background-color: rgba(255, 240, 245, 0.95);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .footer {
-            background-color: rgba(255, 228, 225, 0.85);
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+.footer {
+  background-color: rgba(255, 228, 225, 0.85);
+  color: #800000;
+  text-align: center;
+  padding: 10px;
+}
+</style>
 
 </head>
 
 <body>
 
 <div class="welcome-banner">
-    <h1>Our Bakery Products in Ahmedabad 🎂</h1>
+<center>
+<h1>Welcome to our website! 🎂</h1>
+</center>
 </div>
 
-<header>
-    <nav>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product.html">Our Products</a></li>
-            <li><a href="bakery main web.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="header">
+<div class="container">
+<nav>
+<ul class="nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="product.html">Our Products</a></li>
+<li><a href="bakery main web.html">Gallery</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="order.html">order</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
 
-<section class="products-section">
-    <h2>Delicious Cakes & Bakery Items</h2>
+<!-- Products Section -->
+<section id="products" class="products-section">
+<div class="container">
+<h2>Our Special Products</h2>
 
-    <div class="products-grid">
+<div class="products-grid">
 
-        <div class="product-item">
-            <img src="cake1.jpg" alt="Chocolate Cake Ahmedabad">
-            <h3>Chocolate Cake</h3>
-            <p>Rich and moist chocolate cake with creamy frosting.</p>
-            <p>500 gm = ₹650 | 1 kg = ₹1300</p>
-        </div>
+<div class="product-item">
+<img src="cake1.jpg" alt="Chocolate Cake">
+<h3>Chocolate Cake</h3>
+<p>Rich and moist chocolate cake with creamy frosting.</p>
+<br>500 gm = Rs.650.00/-<br>
+<br>1 kg = Rs.1300.00/-<br>
+</div>
 
-        <div class="product-item">
-            <img src="cupcake.jpg" alt="Vanilla Cupcake Ahmedabad">
-            <h3>Vanilla Cupcake</h3>
-            <p>Soft vanilla cupcakes topped with buttercream frosting.</p>
-            <p>400 gm = ₹800 | 800 gm = ₹1600</p>
-        </div>
+<div class="product-item">
+<img src="cupcake.jpg" alt="Cupcake">
+<h3>Vanilla Cupcake</h3>
+<p>Soft vanilla cupcakes topped with buttercream frosting.</p>
+<br>400 gm = Rs.800.00/-<br>
+<br>800 gm = Rs.1600.00/-<br>
+</div>
 
-        <div class="product-item">
-            <img src="crpissant.jpg" alt="Croissant Ahmedabad">
-            <h3>Buttery Croissant</h3>
-            <p>Flaky and golden croissants made fresh daily.</p>
-            <p>200 gm = ₹400 | 600 gm = ₹1200</p>
-        </div>
+<div class="product-item">
+<img src="crpissant.jpg" alt="Croissant">
+<h3>Buttery Croissant</h3>
+<p>Flaky and golden croissants made fresh daily.</p>
+<br>200 gm = Rs.400.00/-<br>
+<br>600 gm = Rs.1200.00/-<br>
+</div>
 
-        <div class="product-item">
-            <img src="macron.webp" alt="Macarons Ahmedabad">
-            <h3>French Macarons</h3>
-            <p>Delicate and colorful macarons in various flavors.</p>
-            <p>300 gm = ₹600 | 900 gm = ₹1800</p>
-        </div>
+<div class="product-item">
+<img src="macron.webp" alt="Macaron">
+<h3>French Macarons</h3>
+<p>Delicate and colorful macarons in various flavors.</p>
+<br>300 gm = Rs.600.00/-<br>
+<br>900 gm = Rs.1800.00/-<br>
+</div>
 
-        <!-- (Same pattern continue for rest items - already SEO optimized ALT 👍) -->
+<div class="product-item">
+<img src="bread.jpg" alt="Fresh bread">
+<h3>Fresh Bread</h3>
+<p>Handcrafted sourdough and whole grain loaves.</p>
+<br>500 gm = Rs.650.00/-<br>
+<br>1 kg = Rs.1300.00/-<br>
+</div>
 
-    </div>
+<div class="product-item">
+<img src="White-Velvet-Cake-3.jpg" alt="White velvet Cake">
+<h3>White Velvet Cake</h3>
+<p>Rich and creamy white chocolate cake with elegant floral designs.</p>
+<br>1 kg = Rs.2000.00/-<br>
+<br>2 kg = Rs.4000.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="bunberry cake.jpeg" alt="Bunberry Cake">
+<h3>Bunberry Cake</h3>
+<p>This is one of the oldest cake recipes in Britain.</p>
+<br>500 gm = Rs.1000.00/-<br>
+<br>1 kg = Rs.2000.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="Swiss roll.jpg" alt="Swiss Roll">
+<h3>Swiss Roll</h3>
+<p>Soft and creamy taste beautifully decorated with strawberries.</p>
+<br>500 gm = Rs.1500.00/-<br>
+<br>1 kg = Rs.3000.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="trifel.jpg" alt="Trifle">
+<h3>Trifle</h3>
+<p>This classic British dessert is layered with custard, fruit, and sponge cake.</p>
+<br>600 gm = Rs.1200.00/-<br>
+<br>1.5 kg = Rs.3000.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="apple pie.jpeg" alt="Apple Pie">
+<h3>Apple Pie</h3>
+<p>Traditional apple pie with cinnamon-spiced filling and a golden flaky crust.</p>
+<br>200 gm = Rs.600.00/-<br>
+<br>800 gm = Rs.2400.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="belgian choclate cake.png" alt="Belgian choclate cake">
+<h3>belgian choclate cake</h3>
+<p>A rich and smooth cake made with premium Belgian chocolate, perfect for true chocolate lovers.</p>
+<br>200 gm = Rs.800.00/-<br>
+<br>800 gm = Rs.1400.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="01.jpg" alt="Black forest cake">
+<h3>Black Forest Cake</h3>
+<p>A classic chocolate sponge cake layered with fresh cream and cherries for a delightful taste.</p>
+<br>200 gm = Rs.900.00/-<br>
+<br>800 gm = Rs.1600.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="02.webp" alt="Butterscotch crunch cake">
+<h3>Butterscotch Crunch Cake</h3>
+<p>A delicious butterscotch flavored cake topped with crunchy caramel bits and.</p>
+<br>200 gm = Rs.500.00/-<br>
+<br>800 gm = Rs.1100.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="03.webp" alt="choclate lava cake">
+<h3>Chocolate Lava Cupcake</h3>
+<p>A soft chocolate cupcake filled with warm and gooey molten chocolate inside.</p>
+<br>200 gm = Rs.550.00/-<br>
+<br>800 gm = Rs.1200.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="04.jpg" alt="vanilla cream pastry">
+<h3>Vanilla Cream Pastry</h3>
+<p>A light and fluffy vanilla sponge pastry layered with smooth fresh cream.</p>
+<br>200 gm = Rs.600.00/-<br>
+<br>800 gm = Rs.1000.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="05.webp" alt="choclate chip cake">
+<h3>Chocolate Chip Cookies</h3>
+<p>Crunchy and buttery cookies loaded with rich chocolate chips in every bite.</p>
+<br>200 gm = Rs.480.00/-<br>
+<br>800 gm = Rs.1050.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="06.jpg" alt="Almond biscotti">
+<h3>Almond Biscotti</h3>
+<p>Crispy Italian-style almond biscuits, perfectly baked and great with coffee or tea.</p>
+<br>200 gm = Rs.650.00/-<br>
+<br>800 gm = Rs.750.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="07.webp" alt="fruit danish pastry">
+<h3>Fruit Danish Pastry</h3>
+<p>A buttery flaky pastry filled with sweet fruit topping for a delightful taste.</p>
+<br>200 gm = Rs.220.00/-<br>
+<br>800 gm = Rs.720.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="08.jpg" alt="kit kat choclate cake">
+<h3>KitKat Chocolate Cake</h3>
+<p>A rich chocolate cake decorated with crunchy KitKat bars and smooth chocolate cream.</p>
+<br>200 gm = Rs.600.00/-<br>
+<br>800 gm = Rs.2200.00/-<br>
+</div>
+
+<div class="product-item">
+<img src="09.webp" alt="ferrero rocher cake">
+<h3>Ferrero Rocher Cake</h3>
+<p>A premium hazelnut chocolate cake inspired by Ferrero Rocher chocolates.</p>
+<br>200 gm = Rs.1000.00/-<br>
+<br>800 gm = Rs.2800.00/-<br>
+</div>
+
+</div>
+</div>
 </section>
 
+<!-- Footer -->
 <footer class="footer">
-    <p>&copy; 2026 Sweet Indulgence Bakery. All Rights Reserved.</p>
+<div class="container">
+<p>&copy; 2026 Sweet Indulgence Bakery. All Rights Reserved.</p>
+</div>
 </footer>
-
-<!-- Local SEO Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Bakery",
-  "name": "Sweet Indulgence Bakery",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Ahmedabad",
-    "addressCountry": "India"
-  },
-  "telephone": "+919426574760"
-}
-</script>
 
 </body>
 </html>
